@@ -1,0 +1,35 @@
+vi:
+  users:
+    new:
+      confirmation: "Xác nhận mật khẩu"
+      title: "Đăng ký"
+      submit: "Tạo tài khoản"
+      heading: "Đăng ký"
+    create:
+      welcome: "Chào mừng tới Sample App!"
+
+  shared:
+    error_messages:
+      error: "lỗi"
+      message: "Trong form có"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      signup: "Đăng ký ngay"
+      login: "Đăng nhập"
+      heading: "Đăng nhập"
+      message: "Người dùng mới?"
+    create:
+      flash_message: "Email/mật khẩu không hợp lệ"
+
+  layouts:
+    header:
+      brand: "Sample app"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
