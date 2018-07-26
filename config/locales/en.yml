@@ -20,6 +20,7 @@ en:
       login: "Log in"
       heading: "Log in"
       message: "New user?"
+      remember: "Remember me on this computer"
     create:
       flash_message: "Invalid email/password combination"
 
