@@ -20,6 +20,7 @@ vi:
       login: "Đăng nhập"
       heading: "Đăng nhập"
       message: "Người dùng mới?"
+      remember: "Remember me on this computer"
     create:
       flash_message: "Email/mật khẩu không hợp lệ"
 
