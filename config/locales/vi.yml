@@ -7,6 +7,30 @@ vi:
       heading: "Đăng ký"
     create:
       welcome: "Chào mừng tới Sample App!"
+    edit:
+      confirmation: "Xác nhận mật khẩu"
+      title: "Sửa thông tin người dùng"
+      submit: "Lưu thay đổi"
+      heading: "Cập nhật thông tin"
+      change: "Thay đổi"
+      login_message: "Please log in"
+      notfound: "User does not exist"
+    update:
+      success_message: "Cập nhật thành công"
+      notfound: "User does not exist"
+    index:
+      title: "Tất cả người dùng"
+      heading: "Tất cả người dùng"
+      login_message: "Please log in"
+      delete: "Xóa"
+    user:
+      confirm: "You sure?"
+    destroy:
+      deleted: "Đã xóa"
+      notfound: "Không tìm thấy user"
+      delete_error: "Deleted fail"
+    show:
+      notfound: "User does not exist"
 
   shared:
     error_messages:

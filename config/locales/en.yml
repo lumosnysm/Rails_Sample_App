@@ -3,11 +3,35 @@ en:
     new:
       confirmation: "Confirmation"
       title: "Sign up"
-      submit: "Create my account"
+      button_text: "Create my account"
       heading: "Sign up"
     create:
       welcome: "Welcome to the Sample App!"
-
+    edit:
+      confirmation: "Confirmation"
+      title: "Edit user"
+      button_text: "Save changes"
+      heading: "Update your profile"
+      change: "Change"
+      login_message: "Please log in"
+      notfound: "User does not exist"
+    update:
+      success_message: "Profile updated"
+      notfound: "User does not exist"
+    index:
+      title: "All users"
+      heading: "All users"
+      login_message: "Please log in"
+      delete: "delete"
+    user:
+      confirm: "You sure?"
+    destroy:
+      deleted: "User deleted"
+      notfound: "User does not exist"
+      delete_error: "Deleted fail"
+    show:
+      notfound: "User does not exist"
+    
   shared:
     error_messages:
       error: "error"
