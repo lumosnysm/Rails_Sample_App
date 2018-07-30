@@ -14,6 +14,8 @@ gem "bootsnap", ">= 1.1.0", require: false
 gem "bcrypt"
 gem "config"
 gem "jquery-rails"
+gem "kaminari"
+gem "faker"
 
 group :development, :test do
   gem "sqlite3"
