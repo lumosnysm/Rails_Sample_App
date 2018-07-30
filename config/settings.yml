@@ -19,3 +19,7 @@ example_content: 5
 before: "example-"
 after: "@railstutorial.org"
 pass: "password"
+content_max_length: 140
+sizesm: 50
+image_size: 5
+sizesml: 30
