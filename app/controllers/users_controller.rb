@@ -13,7 +13,10 @@ class UsersController < ApplicationController
       page(params[:page]).per Settings.per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_by_created_at_desc.
+      page(params[:page]).per Settings.per_page
+  end
 
   def create
     @user = User.new user_params
@@ -52,14 +55,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit :name, :email, :password,
       :password_confirmation
-    end
-
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = t ".login_message"
-        redirect_to login_url
-      end
     end
 
     def correct_user
