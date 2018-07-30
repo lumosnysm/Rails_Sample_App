@@ -32,7 +32,7 @@ en:
       delete_error: "Deleted fail"
     show:
       notfound: "User does not exist"
-    
+
   shared:
     error_messages:
       error: "error"
@@ -46,6 +46,7 @@ en:
       heading: "Log in"
       message: "New user?"
       remember: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       flash_message: "Invalid email/password combination"
       message: "Account not activated, check your email for the activation link. "
@@ -68,8 +69,35 @@ en:
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
       sayhi: "Hi"
+    password_reset:
+      heading: "Password reset"
+      subject: "Password reset"
+      message1: "To reset your password click the link below:"
+      message2: "This link will expire in two hours."
+      message3: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+      reset: "Reset password"
 
   account_activations:
     edit:
       activated: "Account activated!"
       not_activated: "Invalid activation link"
+
+  password_resets:
+    new:
+      title: "Forgot password"
+      heading: "Forgot password"
+      submit: "Submit"
+    create:
+      email_sent: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+    update:
+      empty: "can't be empty"
+      success: "Password has been reset."
+    edit:
+      expired: "Password reset has expired."
+      not_valid_user: "User is not valid"
+      submit: "Sutmit"
+      confirmation: "Confirmation"
+      title: "Password reset"
+      heading: "Password reset"
