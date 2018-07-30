@@ -7,6 +7,7 @@ vi:
       heading: "Đăng ký"
     create:
       welcome: "Chào mừng tới Sample App!"
+      check_email: "Kiểm tra email để kích hoạt tài khoản."
     edit:
       confirmation: "Xác nhận mật khẩu"
       title: "Sửa thông tin người dùng"
@@ -47,6 +48,7 @@ vi:
       remember: "Remember me on this computer"
     create:
       flash_message: "Email/mật khẩu không hợp lệ"
+      message: "Tài khoản chưa kích hoạt, kiểm tra email để lấy link kích hoạt"
 
   layouts:
     header:
