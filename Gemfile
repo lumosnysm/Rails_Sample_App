@@ -16,6 +16,7 @@ gem "config"
 gem "jquery-rails"
 gem "kaminari"
 gem "faker"
+gem "figaro"
 
 group :development, :test do
   gem "sqlite3"
