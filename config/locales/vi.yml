@@ -46,6 +46,7 @@ vi:
       heading: "Đăng nhập"
       message: "Người dùng mới?"
       remember: "Remember me on this computer"
+      forgot_password: "(quên mật khẩu)"
     create:
       flash_message: "Email/mật khẩu không hợp lệ"
       message: "Tài khoản chưa kích hoạt, kiểm tra email để lấy link kích hoạt"
