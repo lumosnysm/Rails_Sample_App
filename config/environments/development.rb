@@ -71,4 +71,5 @@ Rails.application.configure do
     user_name: Figaro.env.username,
     password: Figaro.env.password
   }
+
 end

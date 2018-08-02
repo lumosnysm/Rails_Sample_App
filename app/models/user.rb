@@ -1,16 +1,19 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
+  before_save :downcase_email
+  before_create :create_activation_digest
+  has_secure_password
+
+  has_many :microposts, dependent: :destroy
+
   validates :name,  presence: true, length: {maximum: Settings.name_max_length}
   validates :email, presence: true, length: {maximum: Settings.email_max_length},
     format: {with: Settings.valid_email_regex}, uniqueness:{case_sensitive: false}
-  has_secure_password
   validates :password, presence: true, length: {minimum: Settings.pass_min_length},
     allow_nil: true
+
   scope :order_by_name, ->{order :name}
   scope :things, ->{select :id, :name, :email}
-  before_save :downcase_email
-  before_create :create_activation_digest
-
 
   class << self
     def digest string
@@ -59,6 +62,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.expired.hours.ago
+  end
+
+  def feed
+    Micropost.where "user_id = ?", id
   end
 
   private

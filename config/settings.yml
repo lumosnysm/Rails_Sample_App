@@ -6,3 +6,16 @@ name_max_length: 50
 email_max_length: 255
 pass_min_length: 6
 expired: 2
+content_max_length: 140
+sizesm: 50
+image_size: 5
+example_name: "Example User"
+example_email: "example@railstutorial.org"
+example_pass: "foobar"
+example_users: 99
+example_users_post: 6
+example_posts: 50
+example_content: 5
+before: "example-"
+after: "@railstutorial.org"
+pass: "password"

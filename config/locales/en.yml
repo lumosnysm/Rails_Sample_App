@@ -32,11 +32,18 @@ en:
       delete_error: "Deleted fail"
     show:
       notfound: "User does not exist"
+      microposts: "Micropost (%{count})"
 
   shared:
     error_messages:
       error: "error"
       message: "The form contains"
+    user_info:
+      view: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      holder: "Compose new micropost..."
+      post: "Post"
 
   sessions:
     new:
@@ -101,3 +108,29 @@ en:
       confirmation: "Confirmation"
       title: "Password reset"
       heading: "Password reset"
+
+  microposts:
+    create:
+      created: "Micropost created!"
+      err: "should be less than 5MB"
+    destroy:
+      deleted: "Micropost deleted"
+    micropost:
+      confirm: "You sure?"
+      posted: "Posted"
+      ago: "ago."
+      delete: "Delete"
+      delete_error: "Delete Error"
+    micropost_form:
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
+    correct_user:
+      not_correct_user: "Not correct user"
+
+  static_pages:
+    home:
+      welcome: "Welcome to the Sample App"
+      message1: "This is the home page for the"
+      message2: "sample application."
+      link: "Ruby on Rails Tutorial"
+      signup: "Sign up now!"
+      feed: "Micropost Feed"
