@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.4.1"
 gem "rails", "~> 5.2.0"
-gem "bootstrap-sass"
+# gem "bootstrap-sass"
 gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
@@ -20,6 +20,7 @@ gem "figaro"
 gem "carrierwave"
 gem "mini_magick"
 gem "bootstrap-kaminari-views"
+gem 'bootstrap', '~> 4.1.3'
 
 group :development, :test do
   gem "sqlite3"
