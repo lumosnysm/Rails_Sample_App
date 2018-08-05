@@ -1,0 +1,2 @@
+$("#like_form_<%= @post.id %>").html('<%= j render "shared/like", post: @post %>');
+$("#likes_<%= @post.id %>").html('<%= @post.liked.count %> likes');

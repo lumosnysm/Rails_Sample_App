@@ -11,6 +11,9 @@ class User < ApplicationRecord
     foreign_key: :followed_id, dependent: :destroy
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
+  has_many :active_likes, class_name: Like.name,
+    foreign_key: :user_id, dependent: :destroy
+  has_many :like_post, through: :active_likes, source: :micropost
 
   validates :name,  presence: true, length: {maximum: Settings.name_max_length}
   validates :email, presence: true, length: {maximum: Settings.email_max_length},
@@ -89,6 +92,18 @@ class User < ApplicationRecord
 
   def following? other_user
     following.include? other_user
+  end
+
+  def like post
+    like_post << post
+  end
+
+  def unlike post
+    like_post.delete post
+  end
+
+  def like? post
+    like_post.include? post
   end
 
   private

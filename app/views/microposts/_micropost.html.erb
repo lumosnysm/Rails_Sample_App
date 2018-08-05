@@ -2,6 +2,10 @@
   <div class="row">
     <div class="col-md-1">
         <%= link_to gravatar_for(micropost.user, size: Settings.sizesm), micropost.user %>
+        <span class="badge badge-primary mt-2" id="likes_<%= micropost.id %>">
+          <%= micropost.liked.count %>
+          <%= t ".likes" %>
+        </span>
     </div>
     <div class="col-md-11">
       <h5>
@@ -16,6 +20,11 @@
       <% if current_user? micropost.user %>
         <%= link_to t(".delete"), micropost, method: :delete,
           data: {confirm: t(".confirm")} %>
+      <% end %>
+      <% if current_user.like? micropost %>
+        <%= render "shared/unlike", post: micropost %>
+      <% else %>
+        <%= render "shared/like", post: micropost %>
       <% end %>
     </div>
   </div>
