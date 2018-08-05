@@ -17,14 +17,13 @@
     </div>
   </div>
 <% else %>
-<div class="center jumbotron">
+<div class="text-center jumbotron rounded-0">
   <h1><%= t ".welcome" %></h1>
   <h2>
     <%= t ".message1" %>
     <a href="#"><%= t ".link" %></a>
     <%= t ".message2" %>
   </h2>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to t(".signup"), signup_path, class: "btn btn-outline-primary btn-lg rounded-0" %>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails logo"), "#" %>
 <% end %>
