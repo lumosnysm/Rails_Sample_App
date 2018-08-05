@@ -22,6 +22,7 @@ gem "mini_magick"
 gem "bootstrap-kaminari-views"
 gem "bootstrap", "~> 4.1.3"
 gem "bootstrap4-kaminari-views"
+gem "font-awesome-rails"
 
 group :development, :test do
   gem "sqlite3"

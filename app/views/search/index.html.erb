@@ -1,0 +1,11 @@
+<% provide :title, t(".title") %>
+<h1><%= t ".heading" %></h1>
+<p class="lead">
+  <%= t ".result" %>
+  "<%= @search_key %>"
+</p>
+<%= paginate @users, theme: "twitter-bootstrap-4" %>
+<ul class="users list-group list-group-flush">
+  <%= render @users %>
+</ul>
+<%= paginate @users, theme: "twitter-bootstrap-4" %>

@@ -1,0 +1,6 @@
+<%= form_tag search_path, method: "get", id: "search-form" ,class: "form-inline w-50" do %>
+  <%= text_field_tag :search, params[:search], class: "form-control form-control-sm rounded-0 w-75" , placeholder: t(".search") %>
+  <button class="btn btn-secondary btn-sm rounded-0" type="submit">
+    <i class="fa fa-fw fa-search"></i>
+  </button>
+<% end %>

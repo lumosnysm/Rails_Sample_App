@@ -61,6 +61,8 @@ en:
     stat:
       following: "Following"
       followers: "Followers"
+    search:
+      search: "Search"
 
   sessions:
     new:
@@ -149,3 +151,9 @@ en:
       link: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
       feed: "Micropost Feed"
+
+  search:
+    index:
+      title: "Search"
+      heading: "Search"
+      result: "Result for: "
