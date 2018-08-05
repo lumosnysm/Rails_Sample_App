@@ -1,9 +1,9 @@
 <%= form_for @micropost do |f| %>
   <%= render "shared/error_messages", object: f.object %>
-  <div class="field">
-    <%= f.text_area :content, placeholder: t(".holder") %>
+  <div class="form-group mt-2">
+    <%= f.text_area :content, placeholder: t(".holder"), class: "form-control rounded-0"%>
   </div>
-  <%= f.submit t(".post"), class: "btn btn-primary" %>
+  <%= f.submit t(".post"), class: "btn btn-outline-primary rounded-0 btn-block mb-2" %>
   <span class="picture">
     <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png" %>
   </span>

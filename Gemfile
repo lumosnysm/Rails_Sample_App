@@ -20,7 +20,8 @@ gem "figaro"
 gem "carrierwave"
 gem "mini_magick"
 gem "bootstrap-kaminari-views"
-gem 'bootstrap', '~> 4.1.3'
+gem "bootstrap", "~> 4.1.3"
+gem "bootstrap4-kaminari-views"
 
 group :development, :test do
   gem "sqlite3"

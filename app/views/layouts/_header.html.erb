@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark shadow-lg bg-dark border mb-4">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-lg bg-dark border sticky-top mb-4">
   <%= link_to image_tag("rails.png", class: "navbar-brand", width:"30", height:"30")%>
-  <%= link_to t(".brand"), root_path, id: "logo", class: "navbar-brand" %>
+  <b><%= link_to t(".brand"), root_path, id: "logo", class: "navbar-brand" %></b>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,7 +21,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <%=  t ".account" %>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <%= link_to t(".profile"), current_user, class:"dropdown-item" %>
           <%= link_to t(".setting"), edit_user_path(current_user), class:"dropdown-item" %>
           <div class="dropdown-divider"></div>
