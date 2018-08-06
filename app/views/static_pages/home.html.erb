@@ -1,15 +1,17 @@
 <% if logged_in? %>
   <div class="row">
     <div class="col-md-4">
-      <section class="user_info">
-        <%= render "shared/user_info" %>
-      </section>
-      <section class="stats">
-        <%= render "shared/stats" %>
-      </section>
-      <section class="micropost_form">
-        <%= render "shared/micropost_form" %>
-      </section>
+      <div class="container bg-white border">
+        <section class="user_info">
+          <%= render "shared/user_info" %>
+        </section>
+        <section class="stats">
+          <%= render "shared/stats" %>
+        </section>
+        <section class="micropost_form">
+          <%= render "shared/micropost_form" %>
+        </section>
+      </div>
     </div>
     <div class="col-md-8">
       <h3><%= t ".feed" %></h3>

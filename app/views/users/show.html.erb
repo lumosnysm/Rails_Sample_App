@@ -1,19 +1,21 @@
 <% provide :title, @user.name %>
 <div class="row">
   <div class="col-md-4">
-    <div class="row">
-      <div class="col-md-2">
-          <%= gravatar_for @user %>
+    <div class="container bg-white border">
+      <div class="row">
+        <div class="col-md-2">
+            <%= gravatar_for @user %>
+        </div>
+        <div class="col-md-10">
+          <h3>
+            <%= @user.name %>
+          </h3>
+        </div>
       </div>
-      <div class="col-md-10">
-        <h3>
-          <%= @user.name %>
-        </h3>
-      </div>
+      <section class="mt-2">
+        <%= render "shared/stats" %>
+      </section>
     </div>
-    <section class="mt-2">
-      <%= render "shared/stats" %>
-    </section>
   </div>
   <div class="col-md-8">
     <%= render "follow_form" if logged_in? %>
